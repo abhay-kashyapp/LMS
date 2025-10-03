@@ -57,7 +57,7 @@ let app = express()
 app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
-    origin: "https://lms-fron.onrender.com",
+    origin:["https://localhost:5173", "https://lms-fron.onrender.com"],
     credentials: true
 }))
 
